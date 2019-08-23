@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include "creature.h"
+#include "luketools.h"
 
 void main(void){
-	creature wolf1 = createCreature("hey there i am a wolf yo");
-	printf(wolf1.report);
+	//clear();
+	creature wolf1 = createCreature("wolf", 100);
+	printf(wolf1.species);
+	status(wolf1);
 }
